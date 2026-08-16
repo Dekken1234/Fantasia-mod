@@ -1,0 +1,2262 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+# This one is the first for the case that some country manages to become fully Norse.
+
+gondorian_ideas = {
+	start = {
+		development_cost = -0.1
+		governing_capacity_modifier = 0.15
+	}
+	
+	bonus = {
+		production_efficiency = 0.15
+	}
+	
+	trigger = {
+		tag = GON
+	}
+	free = yes
+	
+	dunedain_ideas_gondor_trade = {
+		trade_efficiency = 0.1	
+		merchants = 1
+	}
+	dunedain_ideas_morale = {
+		land_morale = 0.15	
+	}
+	dunedain_ideas_european_arrive = {
+		global_institution_spread = 0.1
+		reform_progress_growth = 0.1
+	}
+	dunedain_ideas_settling_lands = {
+		colonists = 1	
+	}
+	dunedain_ideas_diplomats = {
+		diplomats = 1 
+	}
+	dunedain_ideas_hold_the_line = {
+		infantry_power = 0.15
+	}
+	dunedain_ideas_we_have_a_navy = {
+		ship_durability = 0.1
+		naval_morale = 0.05
+	}
+}
+arnorian_ideas = {
+	start = {
+		land_morale = 0.15	
+		stability_cost_modifier = -0.1
+	}
+	
+	bonus = {
+		yearly_absolutism = 1
+	}
+	
+	trigger = {
+		tag = ARO
+	}
+	free = yes
+	
+	dunedain_ideas_reuniting_our_lands = {
+		governing_capacity_modifier = 0.15	
+	}
+	dunedain_ideas_tax = {
+		global_tax_modifier = 0.15
+		war_taxes_cost_modifier = -0.5
+	}
+	dunedain_ideas_gunpowder = {
+		leader_land_fire = 1
+	}
+	dunedain_ideas_academia = {
+		technology_cost = -0.05
+		idea_cost = -0.05
+	}
+	dunedain_ideas_prestige = {
+		prestige = 1
+	}
+	dunedain_ideas_burocracy = {
+		administrative_efficiency = 0.05
+		free_adm_policy = 1
+	}
+	dunedain_ideas_growing_population = {
+		global_manpower_modifier = 0.2
+	}
+}
+umbarim_ideas = {
+	start = {
+		may_perform_slave_raid_on_same_religion = yes
+		naval_forcelimit_modifier = 0.33
+	}
+	
+	bonus = {
+		interest = -0.5
+	}
+	
+	trigger = {
+		tag = UMB
+	}
+	free = yes
+	
+	umbarim_ideas_forts = {
+		fort_maintenance_modifier = -0.15
+		defensiveness = 0.25
+	}
+	umbarim_ideas_trade = {
+		global_trade_power = 0.15
+	}
+	umbarim_ideas_naval_academy = {
+		naval_morale = 0.2 
+	}
+	umbarim_ideas_stability = {
+		stability_cost_modifier = -0.1
+	}
+	umbarim_ideas_development = {
+		development_cost = -0.1
+	}
+	umbarim_ideas_weapons = {
+		fire_damage = 0.1
+	}
+	umbarim_ideas_more_sailors = {
+		global_sailors_modifier = 0.2
+		sunk_ship_morale_hit_recieved = -0.2
+	}
+}
+numenorean_ideas = {
+	start = {
+		colonists = 1
+		naval_forcelimit_modifier = 0.5
+	}
+	
+	bonus = {
+		core_creation = -0.20
+	}
+	
+	trigger = {
+		tag = NMR
+	}
+	free = yes
+	
+	numenorean_ideas_infantry = {
+		infantry_power = 0.15
+		shock_damage = 0.1
+	}
+	numenorean_ideas_builders = {
+		great_project_upgrade_time = -0.1
+		great_project_upgrade_cost = -0.1
+	}
+	numenorean_ideas_colony = {
+		global_colonial_growth = 20
+	}
+	numenorean_ideas_discipline = {
+		discipline = 0.05
+	}
+	numenorean_ideas_technology = {
+		technology_cost = -0.1
+	}
+	numenorean_ideas_burocracy = {
+		governing_capacity_modifier = 0.15	
+	}
+	numenorean_ideas_ae = {
+		ae_impact = -0.15
+	}
+}
+arnorian_split_ideas = {
+	start = {
+		land_morale = 0.1
+		stability_cost_modifier = -0.1
+	}
+	
+	bonus = {
+		yearly_absolutism = 1
+	}
+	
+	trigger = {
+		OR = {
+			tag = RHU
+			tag = CRD
+			tag = ARH
+		}
+	}
+	free = yes
+	
+	arnor_ideas_reuniting_our_lands = {
+		governing_capacity_modifier = 0.1	
+	}
+	arnor_ideas_tax = {
+		global_tax_modifier = 0.1
+		war_taxes_cost_modifier = -0.5
+	}
+	arnor_ideas_gunpowder = {
+		leader_land_fire = 1
+	}
+	arnor_ideas_academia = {
+		idea_cost = -0.05
+	}
+	arnor_ideas_prestige = {
+		prestige = 1
+	}
+	arnor_ideas_burocracy = {
+		administrative_efficiency = 0.05
+		free_adm_policy = 1
+	}
+	arnor_ideas_growing_population = {
+		global_manpower_modifier = 0.1
+	}
+}
+ruk_ideas = {
+	start = {
+		development_cost = -0.1
+		governing_capacity_modifier = 0.15
+	}
+	
+	bonus = {
+		production_efficiency = 0.15
+	}
+	
+	trigger = {
+		tag = RUK
+	}
+	free = yes
+	
+	ruk_ideas_gondor_trade = {
+		trade_efficiency = 0.1	
+		merchants = 1
+	}
+	ruk_ideas_morale = {
+		land_morale = 0.15	
+	}
+	ruk_ideas_academia= {
+		technology_cost = -0.05
+		idea_cost = -0.05
+	}
+	ruk_ideas_settling_lands = {
+		colonists = 1	
+	}
+	ruk_ideas_diplomats = {
+		diplomats = 1 
+	}
+	ruk_ideas_hold_the_line = {
+		infantry_power = 0.15
+	}
+	ruk_ideas_growing_population = {
+		global_manpower_modifier = 0.2
+	}
+}
+alethkar_ideas = {
+	start = {
+		core_creation = -0.25
+		governing_capacity_modifier = 0.15
+	}
+	
+	bonus = {
+		land_morale = 0.15
+	}
+	
+	trigger = {
+		tag = AKH
+	}
+	free = yes
+	
+	alethi_ideas_highprince_of_war = {
+		infantry_power = 0.15
+	}
+	alethi_ideas_highprince_of_relations = {
+		diplomats = 1 	
+	}
+	alethi_ideas_highprince_of_information = {
+		global_spy_defence = 0.33
+		yearly_corruption = -0.2
+	}
+	alethi_ideas_highprince_of_works = {
+		build_cost = -0.15
+	}
+	alethi_ideas_highprince_of_innovation = {
+		global_institution_spread = 0.1
+		reform_progress_growth = 0.1
+	}
+	alethi_ideas_highprince_of_recovery = {
+		global_manpower_modifier = 0.2
+	}
+	alethi_ideas_highprince_of_commerce = {
+		merchants = 1
+		mercantilism_cost = -0.25
+	}
+}
+ALD_ideas = {
+	start = {
+		fort_maintenance_modifier = -0.2
+		land_maintenance_modifier = -0.1
+	}
+	
+	bonus = {
+		infantry_power = 0.1
+	}
+	
+	trigger = {
+		tag = ALD
+	}
+	free = yes		#will be added at load.
+	
+	ALD_diplomats = {
+		diplomats = 1
+	}
+	ALD_idea_cost = {
+		idea_cost = -0.1
+	}
+	ALD_patriarch_authority = {
+		yearly_patriarch_authority = 0.003
+	}
+	ALD_walls = {
+		defensiveness = 0.2
+	}
+	ALD_soldiers = {
+		discipline = 0.05
+	}
+	ALD_royal_ties = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		prestige = 1
+	}
+	ALD_mil_pow = {
+		monarch_military_power = 1
+	}
+}
+BET_ideas = {
+	start = {
+		mercenary_discipline = 0.05
+		merc_maintenance_modifier = -0.15
+	}
+	
+	bonus = {
+		leader_siege = 1
+	}
+	
+	trigger = {
+		tag = BET
+	}
+	free = yes		#will be added at load.
+	
+	BET_claim = {
+		fabricate_claims_cost= -0.2
+	}
+	BET_mercenaries = {
+		mercenary_manpower = 0.5
+	}
+	BET_patriarch_authority = {
+		yearly_patriarch_authority = 0.003
+	}
+	BET_trade = {
+		global_trade_power = 0.20
+	}
+	BET_unrest = {
+		global_unrest = -1
+	}
+	BET_royal_ties = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		prestige = 1
+	}
+	BET_merchants = {
+		merchants = 1
+	}
+}
+HTH_ideas = {
+	start = {
+		diplomats = 1
+		build_cost = -0.1
+	}
+	
+	bonus = {
+		land_morale = 0.1
+	}
+	
+	trigger = {
+		tag = HTH
+	}
+	free = yes		#will be added at load.
+	
+	HTH_cavalry = {
+		cavalry_power = 0.1
+	}
+	HTH_spies = {
+		spy_offence = 0.2
+	}
+	HTH_patriarch_authority = {
+		yearly_patriarch_authority = 0.006
+	}
+	HTH_core = {
+		core_creation = -0.1
+	}
+	HTH_shock = {
+		shock_damage = 0.10
+	}
+	HTH_royal_ties = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		prestige = 1
+	}
+	HTH_build_slots = {
+		global_allowed_num_of_buildings = 1
+	}
+}
+KHL_ideas = {
+	start = {
+		stability_cost_modifier = -0.1
+		infantry_power = 0.1
+	}
+	
+	bonus = {
+		core_creation = -0.1
+	}
+	
+	trigger = {
+		tag = KHL
+	}
+	free = yes		#will be added at load.
+	
+	KHL_codes = {
+		discipline = 0.05
+	}
+	KHL_tax = {
+		global_tax_modifier = 0.10
+	}
+	KHL_patriarch_authority = {
+		yearly_patriarch_authority = 0.003
+	}
+	KHL_tech = {
+		technology_cost = -0.05
+	}
+	KHL_diplomat = {
+		diplomats = 1 
+	}
+	KHL_royal_ties = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		prestige = 1
+	}
+	KHL_siege = {
+		siege_ability = 0.10
+	}
+}
+ROI_ideas = {
+	start = {
+		artillery_power = 0.05
+		merchants = 1
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		tag = ROI
+	}
+	free = yes		#will be added at load.
+	
+	ROI_build = {
+		build_cost = -0.10
+	}
+	ROI_trade = {
+		global_trade_power = 0.1
+	}
+	ROI_patriarch_authority = {
+		yearly_patriarch_authority = 0.003
+	}
+	ROI_archers = {
+		fire_damage = 0.1
+	}
+	ROI_stab = {
+		stability_cost_modifier = -0.10
+	}	
+	ROI_royal_ties = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		prestige = 1
+	}
+	ROI_spy_def = {
+		global_spy_defence = 0.2
+	}
+}
+RUT_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.25
+		global_unrest = -1
+	}
+	
+	bonus = {
+		improve_relation_modifier = 0.3
+	}
+	
+	trigger = {
+		tag = RUT
+	}
+	free = yes		#will be added at load.
+	
+	RUT_moral = {
+		land_morale = 0.10	
+	}
+	RUT_tax = {
+		global_tax_modifier = 0.10
+	}
+	RUT_patriarch_authority = {
+		yearly_patriarch_authority = 0.003
+	}
+	RUT_attition = {
+		hostile_attrition = 1.0
+	}
+	RUT_spy = {
+		spy_offence = 0.10
+	}	
+	RUT_royal_ties = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		prestige = 1
+	}
+	RUT_codes = {
+		infantry_power = 0.1
+	}
+}
+SAD_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.25
+		spy_offence = 0.2
+	}
+	
+	bonus = {
+		leader_land_manuever = 1
+	}
+	
+	trigger = {
+		tag = SAD
+	}
+	free = yes		#will be added at load.
+	
+	SAD_moral = {
+		land_morale = 0.10	
+	}
+	SAD_tax = {
+		global_tax_modifier = 0.10
+	}
+	SAD_patriarch_authority = {
+		yearly_patriarch_authority = 0.003
+	}
+	SAD_building = {
+		build_cost = -0.10
+	}
+	SAD_claim = {
+		fabricate_claims_cost = -0.25
+	}	
+	SAD_royal_ties = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		prestige = 1
+	}
+	SAD_manpower = {
+		global_manpower_modifier = 0.15
+	}
+}
+SEB_ideas = {
+	start = {
+		development_cost = -0.1
+		defensiveness = 0.2
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = SEB
+	}
+	free = yes		#will be added at load.
+	
+	SEB_inst_spred = {
+		global_institution_spread = 0.1
+	}
+	SEB_build = {
+		build_cost = -0.10
+	}
+	SEB_patriarch_authority = {
+		yearly_patriarch_authority = 0.003
+	}
+	SEB_artillery = {
+		artillery_power = 0.1
+	}
+	SEB_production = {
+		production_efficiency = 0.1
+	}	
+	SEB_royal_ties = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		prestige = 1
+	}
+	SEB_manpower = {
+		global_manpower_modifier = 0.15
+	}
+}
+THA_ideas = {
+	start = {
+		build_cost = -0.10
+		idea_cost = -0.05
+	}
+	
+	bonus = {
+		infantry_power = 0.1
+	}
+	
+	trigger = {
+		tag = THA
+	}
+	free = yes		#will be added at load.
+	
+	THA_spy_offence = {
+		spy_offence = 0.2
+	}
+	THA_build = {
+		discipline = 0.05
+	}
+	THA_patriarch_authority = {
+		yearly_patriarch_authority = 0.003
+	}
+	THA_artillery = {
+		fire_damage = 0.1
+	}
+	THA_development = {
+		development_cost = -0.1
+	}	
+	THA_royal_ties = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		prestige = 1
+	}
+	THA_prod_eff = {
+		production_efficiency = 0.05
+	}
+}
+VAM_ideas = {
+	start = {
+		advisor_cost = -0.1
+		army_tradition = 0.5
+	}
+	
+	bonus = {
+		infantry_power = 0.1
+	}
+	
+	trigger = {
+		tag = VAM
+	}
+	free = yes		#will be added at load.
+	
+	VAM_def = {
+		defensiveness = 0.05
+		garrison_size = 0.25
+	}
+	VAM_diplomatic = {
+		diplomatic_upkeep = 1
+	}
+	VAM_patriarch_authority = {
+		yearly_patriarch_authority = 0.003
+	}
+	VAM_shock = {
+		shock_damage_received = -0.15
+	}
+	VAM_production = {
+		production_efficiency = 0.05
+	}	
+	VAM_royal_ties = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		prestige = 1
+	}
+	VAM_stab = {
+		stability_cost_modifier = -0.1
+	}
+}
+TNL_ideas = {
+	start = {
+		core_creation = -0.1
+		global_tax_modifier = 0.1
+	}
+	
+	bonus = {
+		ae_impact = -0.1
+	}
+	
+	trigger = {
+		tag = TNL
+	}
+	free = yes		#will be added at load.
+	
+	TNL_def = {
+		defensiveness = 0.1
+		garrison_size = 0.25
+	}
+	TNL_infantry = {
+		infantry_power = 0.1
+	}
+	TNL_patriarch_authority = {
+		yearly_patriarch_authority = 0.003
+	}
+	TNL_speed = {
+		movement_speed = 0.1
+	}
+	TNL_attrition = {
+		hostile_attrition = 1
+	}	
+	TNL_royal_ties = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		prestige = 1
+	}
+	TNL_dev = {
+		development_cost = -0.1
+	}
+}
+TLR_ideas = {
+	start = {
+		development_cost = -0.1
+		cavalry_cost = -0.1
+	}
+	
+	bonus = {
+		advisor_cost = -0.1
+	}
+	
+	trigger = {
+		tag = TLR
+	}
+	free = yes		#will be added at load.
+	
+	TLR_cav = {
+		cavalry_power = 0.2
+	}
+	TLR_building = {
+		build_cost = -0.1
+	}
+	TLR_patriarch_authority = {
+		yearly_patriarch_authority = 0.003
+	}
+	TLR_ratio = {
+		cav_to_inf_ratio = 0.25
+	}
+	TLR_stab = {
+		stability_cost_modifier = -0.1
+	}	
+	TLR_royal_ties = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		prestige = 1
+	}
+	TLR_state_man = {
+		state_maintenance_modifier = -0.15
+	}
+}
+VEL_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.5
+		allowed_marine_fraction = 0.25
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = VEL
+	}
+	free = yes		#will be added at load.
+	
+	VEL_trade = {
+		global_prov_trade_power_modifier = 0.2
+	}
+	VEL_naval = {
+		naval_tradition_from_battle = 0.5
+		naval_morale = 0.2
+	}
+	VEL_shipbuilding = {
+		global_ship_recruit_speed = -0.10
+	}
+	VEL_ratio = {
+		administrative_efficiency = 0.05
+	}
+	VEL_nav_maintenance = {
+		naval_maintenance_modifier = -0.2
+	}	
+	VEL_merchants = {
+		merchants = 1
+	}
+	VEL_sailors = {
+		global_sailors_modifier = 0.2
+	}
+}
+TGY_ideas = {
+	start = {
+		colonists = 1
+		global_tax_modifier = 0.1
+	}
+	
+	bonus = {
+		backrow_artillery_damage = 0.15
+	}
+	
+	trigger = {
+		tag = TGY
+	}
+	free = yes		#will be added at load.
+	
+	TGY_colony = {
+		global_colonial_growth = 15
+	}
+	TGY_legacy = {
+		legitimacy = 1
+		prestige = 1
+	}
+	TGY_core = {
+		core_creation = -0.10
+	}
+	TGY_moral = {
+		land_morale = 0.15
+	}
+	TGY_tolerance = {
+		tolerance_heathen = 2	
+	}	
+	TGY_fire = {
+		fire_damage_received = -0.1
+	}
+	TGY_cultures = {
+		num_accepted_cultures = 2
+	}
+}
+VYR_ideas = {
+	start = {
+		harmonization_speed = 0.1
+		global_tax_modifier = 0.1
+	}
+	
+	bonus = {
+		backrow_artillery_damage = 0.15
+	}
+	
+	trigger = {
+		tag = VYR
+	}
+	free = yes		#will be added at load.
+	
+	VYR_tolerance = {
+		tolerance_heathen = 3	
+	}	
+	VYR_legacy = {
+		legitimacy = 1
+		prestige = 1
+	}
+	VYR_core = {
+		core_creation = -0.20
+	}
+	VYR_moral = {
+		land_morale = 0.2
+	}
+	VYR_harmony = {
+		yearly_harmony = 0.1
+	}
+	VYR_fire = {
+		fire_damage_received = -0.1
+	}
+	VYR_cultures = {
+		num_accepted_cultures = 3
+	}
+}
+WST_ideas = {
+	start = {
+		development_cost = -0.1
+		land_morale = 0.2
+	}
+	
+	bonus = {
+		possible_policy = 1
+	}
+	
+	trigger = {
+		tag = WST
+	}
+	free = yes		#will be added at load.
+	
+	WST_gov_capacity = {
+		governing_capacity_modifier = 0.15
+	}
+	WST_manuever = {
+		leader_land_manuever = 1
+	}
+	WST_core = {
+		core_creation = -0.20
+	}
+	WST_production = {
+		production_efficiency = 0.15
+	}
+	WST_tech = {
+		technology_cost = -0.1
+	}	
+	WST_forts = {
+		fort_maintenance_modifier = -0.20
+		defensiveness = 0.20
+	}
+	WST_cultures = {
+		num_accepted_cultures = 3
+	}
+}
+LIN_ideas = {
+	start = {
+		development_cost = -0.1
+		cavalry_cost = -0.10
+	}
+	
+	bonus = {
+		global_tax_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = LIN
+	}
+	free = yes		#will be added at load.
+	
+	LIN_tradegoods = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	LIN_prestige_decay = {
+		prestige_decay = -0.01	
+	}
+	LIN_cavalry = {
+		cavalry_power = 0.15
+	}
+	LIN_tolerance = {
+		tolerance_own = 2
+	}
+	LIN_ae = {
+		ae_impact = -0.10
+	}	
+	LIN_diplo = {
+		diplomatic_upkeep = 1
+	}
+	LIN_moral = {
+		land_morale = 0.1
+	}
+}
+VOY_ideas = {
+	start = {
+		global_tax_modifier = 0.1
+		global_sailors_modifier = 0.25
+	}
+	
+	bonus = {
+		naval_morale = 0.2
+	}
+	
+	trigger = {
+		tag = VOY
+	}
+	free = yes		#will be added at load.
+	
+	VOY_core = {
+		core_creation = -0.1
+	}
+	VOY_infantry = {
+		infantry_power = 0.15
+	}
+	VOY_ships = {
+		global_ship_cost = -0.1
+	}
+	VOY_unrest = {
+		global_unrest = -2
+	}
+	VOY_ae = {
+		ae_impact = -0.10
+	}	
+	VOY_missionary = {
+		global_heretic_missionary_strength = 0.02
+	}
+	VOY_moral = {
+		land_morale = 0.1
+	}
+}
+ROC_ideas = {
+	start = {
+		production_efficiency = 0.1
+		administrative_efficiency = 0.05
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = ROC
+	}
+	free = yes		#will be added at load.
+	
+	ROC_ae = {
+		ae_impact = -0.10
+	}
+	ROC_infantry = {
+		infantry_power = 0.15
+	}
+	ROC_build = {
+		build_cost = -0.1
+	}
+	ROC_unrest = {
+		global_unrest = -1
+	}
+	ROC_manuever = {
+		leader_land_manuever = 1
+	}	
+	ROC_numb_buildings = {
+		global_allowed_num_of_buildings = 1
+	}
+	ROC_moral = {
+		land_morale = 0.1
+	}
+}
+BLX_ideas = {
+	start = {
+		global_tax_modifier = 0.1
+		infantry_power = 0.15
+	}
+	
+	bonus = {
+		yearly_absolutism = 1
+	}
+	
+	trigger = {
+		tag = BLX
+	}
+	free = yes		#will be added at load.
+	
+	BLX_ae = {
+		ae_impact = -0.10
+	}
+	BLX_tradition = {
+		army_tradition = 0.5
+	}
+	BLX_inquisition = {
+		missionaries = 1
+		global_missionary_strength = 0.01
+	}
+	BLX_diplomats = {
+		diplomats = 1 
+	}
+	BLX_tech = {
+		technology_cost = -0.05
+	}	
+	BLX_absolutism = {
+		max_absolutism = 10
+	}
+	BLX_moral = {
+		land_morale = 0.1
+	}
+}
+LES_ideas = {
+	start = {
+		merchants = 1
+		cavalry_cost = -0.10
+	}
+	
+	bonus = {
+		ae_impact = -0.10
+	}
+	
+	trigger = {
+		tag = LES
+	}
+	free = yes		#will be added at load.
+	
+	LES_tradesteering = {
+		trade_steering = 0.15
+	}
+	LES_cavalry = {
+		cavalry_power = 0.15
+	}		
+	LES_prestige = {
+		prestige = 1
+	}
+	LES_light_ship = {
+		light_ship_power = 0.15
+	}
+	LES_core = {
+		core_creation = -0.1
+	}	
+	LES_development = {
+		development_cost = -0.1
+	}
+	LES_moral = {
+		land_morale = 0.1
+	}
+}
+INO_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.5
+		allowed_marine_fraction = 0.25
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = INO
+	}
+	free = yes		#will be added at load.
+	
+	INO_trade = {
+		global_prov_trade_power_modifier = 0.2
+	}
+	INO_naval = {
+		naval_tradition_from_battle = 0.5
+		naval_morale = 0.2
+	}
+	INO_shipbuilding = {
+		global_ship_recruit_speed = -0.10
+	}
+	INO_ae = {
+		ae_impact = -0.10
+	}
+	INO_nav_maintenance = {
+		naval_maintenance_modifier = -0.2
+	}	
+	INO_merchants = {
+		merchants = 1
+	}
+	INO_sailors = {
+		global_sailors_modifier = 0.2
+	}
+}
+NUF_ideas = {
+	start = {
+		global_tax_modifier = 0.2
+		infantry_power = 0.2
+	}
+	
+	bonus = {
+		yearly_absolutism = 1
+	}
+	
+	trigger = {
+		tag = NUF
+	}
+	free = yes		#will be added at load.
+	
+	NUF_ae = {
+		ae_impact = -0.10
+	}
+	NUF_tradition = {
+		army_tradition = 0.5
+	}
+	NUF_inquisition = {
+		missionaries = 1
+		global_missionary_strength = 0.02
+	}
+	NUF_diplomats = {
+		diplomats = 1 
+	}
+	NUF_tech = {
+		technology_cost = -0.1
+	}	
+	NUF_absolutism = {
+		max_absolutism = 10
+	}
+	NUF_moral = {
+		land_morale = 0.15
+	}
+}
+RIE_ideas = {
+	start = {
+		global_tax_modifier = 0.1
+		defensiveness = 0.2
+	}
+	
+	bonus = {
+		reinforce_speed = 0.15
+	}
+	
+	trigger = {
+		tag = RIE
+	}
+	free = yes		#will be added at load.
+	
+	RIE_infantry = {
+		infantry_power = 0.1
+	}
+	RIE_adm_tech = {
+		adm_tech_cost_modifier = -0.1
+	}
+	RIE_attrition = {
+		hostile_attrition = 1
+	}
+	RIE_prestige = {
+		prestige = 1
+	}
+	RIE_ae = {
+		ae_impact = -0.10
+	}	
+	RIE_spy = {
+		spy_offence = 0.2
+	}
+	RIE_moral = {
+		land_morale = 0.1
+	}
+}
+LET_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.5
+		merchants = 1
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = LET
+	}
+	free = yes		#will be added at load.
+
+	LET_mercenary = {
+		mercenary_cost = -0.05
+		mercenary_discipline = 0.05
+	}	
+	LET_trade = {
+		global_prov_trade_power_modifier = 0.2
+	}
+	LET_rep_trad = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+	}
+	LET_ae = {
+		ae_impact = -0.10
+	}
+	LET_nav_maintenance = {
+		naval_maintenance_modifier = -0.2
+	}	
+	LET_merc_manpower = {
+		mercenary_manpower = 0.5
+	}
+	LET_heavy_ship = {
+		heavy_ship_power = 0.1
+		heavy_ship_cost = -0.05
+	}
+}
+ESE_ideas = {
+	start = {
+		development_cost = -0.1
+		cavalry_cost = -0.10
+	}
+	
+	bonus = {
+		global_tax_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = ESE
+	}
+	free = yes		#will be added at load.
+	
+	ESE_tradegoods = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	ESE_prestige_decay = {
+		prestige_decay = -0.01	
+	}
+	ESE_cavalry = {
+		cavalry_power = 0.1
+	}
+	ESE_tolerance = {
+		tolerance_own = 1
+	}
+	ESE_ae = {
+		ae_impact = -0.10
+	}	
+	ESE_diplo = {
+		diplomatic_upkeep = 1
+	}
+	ESE_moral = {
+		land_morale = 0.1
+	}
+}
+CNX_ideas = {
+	start = {
+		development_cost = -0.1
+		discipline = 0.05
+	}
+	
+	bonus = {
+		diplomatic_reputation = 1
+	}
+	
+	trigger = {
+		tag = CNX
+	}
+	free = yes		#will be added at load.
+	
+	CNX_pap_inf = {
+		papal_influence = 2
+		monthly_fervor_increase = 0.25
+		church_power_modifier = 0.1
+	}
+	CNX_tax = {
+		global_tax_modifier = 0.1
+	}
+	CNX_def = {
+		defensiveness = 0.2
+	}
+	CNX_tolerance = {
+		tolerance_own = 2
+	}
+	CNX_ae = {
+		ae_impact = -0.10
+	}	
+	CNX_miss = {
+		global_missionary_strength = 0.02
+	}
+	CNX_moral = {
+		land_morale = 0.1
+	}
+}
+CAU_ideas = {
+	start = {
+		army_tradition_decay = -0.01
+		manpower_recovery_speed = 0.1
+	}
+	
+	bonus = {
+		cav_to_inf_ratio = 0.25
+	}
+	
+	trigger = {
+		tag = CAU
+	}
+	free = yes		#will be added at load.
+	
+	CAU_tol = {
+		tolerance_own = 2
+	}
+	CAU_cav = {
+		cavalry_power = 0.15
+	}
+	CAU_leg = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+	}
+	CAU_pres = {
+		prestige_decay = -0.01
+	}
+	CAU_ae = {
+		ae_impact = -0.10
+	}	
+	CAU_prod = {
+		production_efficiency = 0.10
+	}
+	CAU_moral = {
+		land_morale = 0.1
+	}
+}
+BEA_ideas = {
+	start = {
+		global_autonomy = -0.05
+		war_exhaustion = -0.03
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = BEA
+	}
+	free = yes		#will be added at load.
+	
+	BEA_tol = {
+		tolerance_own = 2
+	}
+	BEA_mil_tech = {
+		mil_tech_cost_modifier  = -0.1
+	}
+	BEA_stab = {
+		stability_cost_modifier = -0.15
+	}
+	BEA_cav = {
+		cavalry_power = 0.15
+	}
+	BEA_ae = {
+		ae_impact = -0.10
+	}	
+	BEA_inflation	= {
+		inflation_reduction = 0.1
+	}
+	BEA_moral = {
+		land_morale = 0.1
+	}
+}
+CLU_ideas = {
+	start = {
+		prestige_from_land = 0.25
+		land_forcelimit_modifier = 0.15
+	}
+	
+	bonus = {
+		global_autonomy = -0.05
+	}
+	
+	trigger = {
+		tag = CLU
+	}
+	free = yes		#will be added at load.
+	
+	CLU_tol = {
+		tolerance_own = 2
+	}
+	CLU_manpower = {
+		global_manpower_modifier = 0.1
+	}
+	CLU_institution = {
+		global_institution_spread = 0.1
+	}
+	CLU_reinforce = {
+		reinforce_cost_modifier = -0.25
+	}
+	CLU_ae = {
+		ae_impact = -0.10
+	}	
+	CLU_stab = {
+		stability_cost_modifier = -0.15
+	}
+	CLU_moral = {
+		land_morale = 0.1
+	}
+}
+AUT_ideas = {
+	start = {
+		adm_tech_cost_modifier = -0.1
+		shock_damage = 0.1
+	}
+	
+	bonus = {
+		yearly_corruption = -0.1
+	}
+	
+	trigger = {
+		tag = AUT
+	}
+	free = yes		#will be added at load.
+	
+	AUT_tol = {
+		tolerance_own = 2
+	}
+	AUT_production = {
+		production_efficiency = 0.1
+	}
+	AUT_pap_inf = {
+		papal_influence = 2
+		monthly_fervor_increase = 0.25
+		church_power_modifier = 0.1
+	}
+	AUT_infantry = {
+		infantry_power = 0.1
+	}
+	AUT_ae = {
+		ae_impact = -0.10
+	}	
+	AUT_artillery = {
+		artillery_power = 0.1
+	}
+	AUT_moral = {
+		land_morale = 0.1
+	}
+}
+SRE_ideas = {
+	start = {
+		production_efficiency = 0.1
+		fort_maintenance_modifier = -0.2
+	}
+	
+	bonus = {
+		artillery_cost = -0.15
+	}
+	
+	trigger = {
+		tag = SRE
+	}
+	free = yes		#will be added at load.
+	
+	SRE_tol = {
+		tolerance_own = 2
+	}
+	SRE_reinforce = {
+		reinforce_cost_modifier = -0.15
+	}
+	SRE_prestige = {
+		prestige_decay = -0.01
+	}
+	SRE_discipline = {
+		discipline = 0.05
+	}
+	SRE_ae = {
+		ae_impact = -0.10
+	}	
+	SRE_build = {
+		build_cost = -0.10
+	}
+	SRE_moral = {
+		land_morale = 0.1
+	}
+}
+VIG_ideas = {
+	start = {
+		global_heretic_missionary_strength = 0.02
+		fort_maintenance_modifier = -0.2
+	}
+	
+	bonus = {
+		infantry_cost = -0.2
+	}
+	
+	trigger = {
+		tag = VIG
+	}
+	free = yes		#will be added at load.
+	
+	VIG_tax = {
+		global_tax_modifier = 0.1
+	}
+	VIG_manpower = {
+		global_manpower_modifier = 0.15
+	}
+	VIG_poduction = {
+		production_efficiency = 0.1
+	}
+	VIG_inflation = {
+		inflation_reduction = 0.1
+	}
+	VIG_ae = {
+		ae_impact = -0.10
+	}	
+	VIG_absolutism = {
+		yearly_absolutism = 0.5
+	}
+	VIG_moral = {
+		land_morale = 0.1
+	}
+}
+MTS_ideas = {
+	start = {
+		manpower_recovery_speed = 0.15
+		stability_cost_modifier = -0.1
+	}
+	
+	bonus = {
+		prestige_decay = -0.01
+	}
+	
+	trigger = {
+		tag = MTS
+	}
+	free = yes		#will be added at load.
+	
+	MTS_speed = {
+		movement_speed = 0.1
+	}
+	MTS_institution = {
+		global_institution_spread = 0.1
+	}
+	MTS_missionary = {
+		global_missionary_strength = 0.02
+	}
+	MTS_force_limit = {
+		land_forcelimit_modifier = 0.2
+	}
+	MTS_ae = {
+		ae_impact = -0.10
+	}	
+	MTS_corruption = {
+		yearly_corruption = -0.05
+	}
+	MTS_moral = {
+		land_morale = 0.1
+	}
+}
+ARC_ideas = {
+	start = {
+		leader_land_fire = 1
+		tolerance_own = 2
+	}
+	
+	bonus = {
+		inflation_reduction = 0.1
+	}
+	
+	trigger = {
+		tag = ARC
+	}
+	free = yes		#will be added at load.
+	
+	ARC_advisor = {
+		advisor_cost = -0.10
+	}
+	ARC_speed = {
+		movement_speed = 0.1
+	}
+	ARC_hostile_ttrition = {
+		hostile_attrition = 1.0
+	}
+	ARC_missionary = {
+		global_missionary_strength = 0.03
+	}
+	ARC_ae = {
+		ae_impact = -0.10
+	}	
+	ARC_tax = {
+		global_tax_modifier = 0.1
+	}
+	ARC_moral = {
+		land_morale = 0.1
+	}
+}
+ALY_ideas = {
+	start = {
+		drill_gain_modifier = 0.5
+		global_spy_defence = 0.3
+	}
+	
+	bonus = {
+		max_absolutism = 10
+	}
+	
+	trigger = {
+		tag = ALY
+	}
+	free = yes		#will be added at load.
+	
+	ALY_missionary = {
+		global_missionary_strength = 0.02
+	}
+	ALY_infl = {
+		inflation_reduction = 0.1
+	}
+	ALY_artillery = {
+		artillery_power = 0.1
+	}
+	ALY_institution = {
+		global_institution_spread = 0.1
+	}
+	ALY_ae = {
+		ae_impact = -0.10
+	}	
+	ALY_tol = {
+		tolerance_own = 2
+	}
+	ALY_moral = {
+		land_morale = 0.1
+	}
+}
+FRE_ideas = {
+	start = {
+		production_efficiency = 0.1
+		global_regiment_recruit_speed = -0.05
+	}
+	
+	bonus = {
+		global_institution_spread = 0.1
+	}
+	
+	trigger = {
+		tag = FRE
+	}
+	free = yes		#will be added at load.
+	
+	FRE_tol = {
+		tolerance_own = 2
+	}
+	FRE_shock = {
+		shock_damage = 0.1
+	}
+	FRE_cavalry = {
+		cavalry_power = 0.20
+	}
+	FRE_advisor = {
+		advisor_cost = -0.1
+	}
+	FRE_ae = {
+		ae_impact = -0.10
+	}	
+	FRE_prestige = {
+		prestige = 1
+	}
+	FRE_moral = {
+		land_morale = 0.1
+	}
+}
+ACP_ideas = {
+	start = {
+		mil_tech_cost_modifier  = -0.1
+		shock_damage_received = -0.1
+	}
+	
+	bonus = {
+		advisor_cost = -0.1
+	}
+	
+	trigger = {
+		tag = ACP
+	}
+	free = yes		#will be added at load.
+	
+	ACP_sate_maintenance = {
+		state_maintenance_modifier = -0.25
+	}
+	ACP_tol = {
+		tolerance_own = 2
+	}
+	ACP_cavalry = {
+		cavalry_cost = -0.15
+	}
+	ACP_build = {
+		build_cost = -0.1
+		build_time = -0.1
+	}
+	ACP_ae = {
+		ae_impact = -0.10
+	}	
+	ACP_spy = {
+		spy_offence = 0.10
+	}
+	ACP_moral = {
+		land_morale = 0.1
+	}
+}
+VLU_ideas = {
+	start = {
+		global_spy_defence = 0.3
+		inflation_reduction = 0.1
+	}
+	
+	bonus = {
+		land_attrition = -0.10
+	}
+	
+	trigger = {
+		tag = VLU
+	}
+	free = yes		#will be added at load.
+	
+	VLU_cavalry = {
+		cavalry_power = 0.15
+	}
+	VLU_stability = {
+		stability_cost_modifier = -0.10
+	}
+	VLU_fort_defense = {
+		defensiveness = 0.25
+	}
+	VLU_tax = {
+		global_tax_modifier = 0.1
+	}
+	VLU_ae = {
+		ae_impact = -0.10
+	}	
+	VLU_prestige = {
+		prestige = 1
+	}
+	VLU_moral = {
+		land_morale = 0.1
+	}
+}
+JEA_ideas = {
+	start = {
+		army_tradition = 0.5
+		diplomats = 1 
+	}
+	
+	bonus = {
+		production_efficiency = 0.1
+	}
+	
+	trigger = {
+		tag = JEA
+	}
+	free = yes		#will be added at load.
+	
+	JEA_infantry = {
+		infantry_power = 0.1
+	}
+	JEA_spy_def = {
+		global_spy_defence = 0.1
+	}
+	JEA_force_limits = {
+		land_forcelimit_modifier = 0.25
+	}
+	JEA_tol = {
+		tolerance_own = 2
+	}
+	JEA_ae = {
+		ae_impact = -0.10
+	}	
+	JEA_advisor = {
+		advisor_cost = -0.1
+	}
+	JEA_moral = {
+		land_morale = 0.1
+	}
+}
+CUR_ideas = {
+	start = {
+		spy_offence = 0.10
+		merchants = 1
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = CUR
+	}
+	free = yes		#will be added at load.
+
+	CUR_mercenary = {
+		mercenary_cost = -0.05
+		mercenary_discipline = 0.05
+	}	
+	CUR_trade = {
+		trade_efficiency = 0.1
+	}
+	CUR_rep_trad = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+	}
+	CUR_ae = {
+		ae_impact = -0.10
+	}
+	CUR_nav = {
+		naval_forcelimit_modifier = 0.25
+	}	
+	CUR_diplomacy = {
+		diplomats = 1
+	}
+	CUR_light_ship = {
+		light_ship_cost = -0.20
+	}
+}
+GAR_ideas = {
+	start = {
+		adm_tech_cost_modifier = -0.1
+		war_exhaustion = -0.03
+	}
+	
+	bonus = {
+		artillery_power = 0.1
+	}
+	
+	trigger = {
+		tag = GAR
+	}
+	free = yes		#will be added at load.
+	
+	GAR_cavalry = {
+		cavalry_power = 0.1
+	}
+	GAR_diplomats = {
+		diplomats = 1 
+	}
+	GAR_cav_inf = {
+		cav_to_inf_ratio = 0.25
+	}
+	GAR_tol = {
+		tolerance_own = 2
+	}
+	GAR_ae = {
+		ae_impact = -0.10
+	}	
+	GAR_institutions = {
+		global_institution_spread = 0.1
+	}
+	GAR_moral = {
+		land_morale = 0.1
+	}
+}
+VME_ideas = {
+	start = {
+		artillery_power = 0.1
+		adm_tech_cost_modifier = -0.1
+	}
+	
+	bonus = {
+		war_exhaustion = -0.03
+	}
+	
+	trigger = {
+		tag = VME
+	}
+	free = yes		#will be added at load.
+
+	VME_tol = {
+		tolerance_own = 2
+	}	
+	VME_infantry_cost = {
+		infantry_cost = -0.2
+	}
+	VME_corruption = {
+		yearly_corruption = -0.05 
+	}
+	VME_fire = {
+		fire_damage = 0.1
+	}
+	VME_ae = {
+		ae_impact = -0.10
+	}	
+	VME_advisor = {
+		advisor_cost = -0.1
+	}
+	VME_moral = {
+		land_morale = 0.1
+	}
+}
+MLL_ideas = {
+	start = {
+		diplomats = 1 
+		shock_damage_received = -0.1
+	}
+	
+	bonus = {
+		land_maintenance_modifier = -0.05
+	}
+	
+	trigger = {
+		tag = MLL
+	}
+	free = yes		#will be added at load.
+
+	MLL_prestige = {
+		prestige = 1
+	}	
+	MLL_infantry = {
+		infantry_power = 0.1
+	}
+	MLL_build_cost = {
+		build_cost = -0.10	
+	}
+	MLL_manpower = {
+		global_manpower_modifier = 0.25
+	}
+	MLL_ae = {
+		ae_impact = -0.10
+	}	
+	MLL_inflation = {
+		inflation_reduction = 0.1
+	}
+	MLL_moral = {
+		land_morale = 0.1
+	}
+}
+OIS_ideas = {
+	start = {
+		development_cost = -0.1
+		merc_maintenance_modifier = -0.15
+	}
+	
+	bonus = {
+		spy_offence = 0.2
+	}
+	
+	trigger = {
+		tag = OIS
+	}
+	free = yes		#will be added at load.
+
+	OIS_production = {
+		production_efficiency = 0.10
+	}	
+	OIS_merc = {
+		mercenary_discipline = 0.025
+	}
+	OIS_build_cost = {
+		build_cost = -0.10	
+	}
+	OIS_tech = {
+		technology_cost = -0.1
+	}
+	OIS_ae = {
+		ae_impact = -0.10
+	}	
+	OIS_inflation = {
+		inflation_reduction = 0.1
+	}
+	OIS_moral = {
+		land_morale = 0.1
+	}
+}
+HER_ideas = {
+	start = {
+		global_institution_spread = 0.1
+		prestige = 1
+	}
+	
+	bonus = {
+		defensiveness = 0.15
+	}
+	
+	trigger = {
+		tag = HER
+	}
+	free = yes		#will be added at load.
+
+	HER_tolerance = {
+		tolerance_own = 2
+	}	
+	HER_dev = {
+		development_cost = -0.1
+	}
+	HER_diplomats = {
+		diplomats = 1 
+	}
+	HER_advisor = {
+		advisor_cost = -0.1
+	}
+	HER_ae = {
+		ae_impact = -0.10
+	}	
+	HER_stab = {
+		stability_cost_modifier = -0.1
+	}
+	HER_moral = {
+		land_morale = 0.1
+	}
+}
+VDO_ideas = {
+	start = {
+		governing_capacity_modifier = 0.1
+		army_tradition = 0.5
+	}
+	
+	bonus = {
+		tolerance_own = 2
+	}
+	
+	trigger = {
+		tag = VDO
+	}
+	free = yes		#will be added at load.
+
+	VDO_fort_def = {
+		defensiveness = 0.2
+	}	
+	VDO_missionaries = {
+		global_missionary_strength = 0.02
+	}
+	VDO_fire_def = {
+		fire_damage_received = -0.15
+	}
+	VDO_spy_def = {
+		global_spy_defence = 0.2
+	}
+	VDO_ae = {
+		ae_impact = -0.10
+	}	
+	VDO_build = {
+		build_cost = -0.1
+	}
+	VDO_moral = {
+		land_morale = 0.1
+	}
+}
+CRV_ideas = {
+	start = {
+		war_exhaustion = -0.02
+		artillery_cost = -0.15
+	}
+	
+	bonus = {
+		global_heretic_missionary_strength = 0.02
+	}
+	
+	trigger = {
+		tag = CRV
+	}
+	free = yes		#will be added at load.
+
+	CRV_tax = {
+		global_tax_modifier = 0.1
+	}	
+	CRV_discipline = {
+		discipline = 0.05
+	}
+	CRV_diplo_rep = {
+		diplomatic_reputation = 1
+	}
+	CRV_spy_off = {
+		spy_offence = 0.2
+	}
+	CRV_ae = {
+		ae_impact = -0.10
+	}	
+	CRV_production = {
+		production_efficiency = 0.1
+	}
+	CRV_moral = {
+		land_morale = 0.1
+	}
+}
+SAA_ideas = {
+	start = {
+		global_manpower_modifier = 0.2
+		stability_cost_modifier = -0.1
+	}
+	
+	bonus = {
+		shock_damage = 0.1
+	}
+	
+	trigger = {
+		tag = SAA
+	}
+	free = yes		#will be added at load.
+
+	SAA_tolerance = {
+		tolerance_own = 2
+	}	
+	SAA_cav_cost = {
+		cavalry_cost = -0.1
+	}
+	SAA_inflation = {
+		inflation_reduction = 0.1
+	}
+	SAA_spy_off = {
+		spy_offence = 0.2
+	}
+	SAA_ae = {
+		ae_impact = -0.10
+	}	
+	SAA_build = {
+		build_cost = -0.1
+	}
+	SAA_moral = {
+		land_morale = 0.1
+	}
+}
+GEM_ideas = {
+	start = {
+		global_unrest = -2
+		fort_maintenance_modifier = -0.10
+	}
+	
+	bonus = {
+		land_maintenance_modifier = -0.05
+	}
+	
+	trigger = {
+		tag = GEM
+	}
+	free = yes		#will be added at load.
+
+	GEM_fort_def = {
+		defensiveness = 0.15
+	}	
+	GEM_tax = {
+		global_tax_modifier = 0.10
+	}
+	GEM_hostile_att = {
+		hostile_attrition = 1
+	}
+	GEM_corruption = {
+		yearly_corruption = -0.05 
+	}
+	GEM_ae = {
+		ae_impact = -0.10
+	}	
+	GEM_spy_def = {
+		global_spy_defence = 0.1
+	}
+	GEM_moral = {
+		land_morale = 0.1
+	}
+}
+MNY_ideas = {
+	start = {
+		global_institution_spread = 0.1
+		inflation_reduction = 0.1
+	}
+	
+	bonus = {
+		prestige_decay = -0.01
+	}
+	
+	trigger = {
+		tag = MNY
+	}
+	free = yes		#will be added at load.
+
+	MNY_speed = {
+		movement_speed = 0.15
+	}	
+	MNY_build_time = {
+		build_time = -0.1
+	}
+	MNY_fire = {
+		fire_damage = 0.1
+	}
+	MNY_diplo_upkeep = {
+		diplomatic_upkeep = 1
+	}
+	MNY_ae = {
+		ae_impact = -0.10
+	}	
+	MNY_prod_eff = {
+		production_efficiency = 0.1
+	}
+	MNY_moral = {
+		land_morale = 0.1
+	}
+}
